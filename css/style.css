@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'TT Commons Bold';
+    src: url('../fonte/TTCommons-Bold.eot');
+    src: url('../fonte/TTCommons-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonte/TTCommons-Bold.woff2') format('woff2'),
+        url('../fonte/TTCommons-Bold.woff') format('woff'),
+        url('../fonte/TTCommons-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../fonte/TTCommons-Regular.eot');
+    src: url('../fonte/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonte/TTCommons-Regular.woff2') format('woff2'),
+        url('../fonte/TTCommons-Regular.woff') format('woff'),
+        url('../fonte/TTCommons-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HOME */
+#home {
+    background-color: #010101;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    font-family: TT Commons;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+.menu a {
+    text-decoration: none !important;
+    color: white;
+    font-size: 20px;
+}
+
+.headers {
+    font-family: TT Commons;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 470px;
+}
+
+.headers h1 {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.headers h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.button-home {
+    padding: 18px 60px 18px 20px;
+    background-color: white;
+    border-radius: 50px;
+    font-family: 'TT Commons Bold';
+    text-decoration: none !important;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+
+.button-home svg {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-35%);
+}
+
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    margin-left: 9px;
+}
+
+.montain-bg {
+    width: 100%;
+    position: absolute;
+    bottom: -340px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* HOME */
+/* ABOUT */
+#about {
+    padding: 70px 0px;
+    position: relative;
+}
+
+.about-title {
+    font-family: TT Commons;
+    color: black;
+    font-size: 35px;
+}
+
+.about-content {
+    font-family: 'TT Commons Bold';
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.img-about {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* ABOUT */
+/* PROJETOS */
+#projetos {
+    background-color: black;
+    padding: 30px 0px;
+}
+
+.projetos-title {
+    font-family: TT Commons;
+    font-size: 45px;
+    color: white;
+    position: relative;
+    letter-spacing: 1.2px;
+    margin-bottom: 50px;
+}
+
+.projetos-title::after {
+    content: '';
+    display: block;
+    width: 285px;
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+}
+.projeto {
+    text-align: center;
+}
+.projeto img {
+    width: 100%;
+}
+
+.projeto p {
+    font-family: TT Commons;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto 50px auto;
+    line-height: 27px;
+}
+
+/* PROJETOS */
+/* CONTATO */
+#contato {
+    background-image: url("../images/Contact.jpg");
+    background-size: cover;
+    background-position: bottom right;
+    padding: 60px;
+    font-family: "TT Commons Bold";
+    color: black;
+}
+#contato h3 {
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+#contato p {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#contato a {
+    color: black !important;
+    text-decoration: none;
+}
+.redes-sociais {
+    text-align: center;
+    margin: 0 auto;
+    width: 230px;
+}
+.redes-sociais span {
+    font-size: 25px;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: 10px auto 0px auto;
+}
+.icons img {
+    width: 40px;
+    margin: 0 auto;
+}
+/* CONTATO */
